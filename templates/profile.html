@@ -1,60 +1,78 @@
-{% extends "base.html" %}
-{% block content %}
-<div class="container ">
-    <section class="col-md-12">
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-header-headshot"></div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-content-member">
-                            <h4 class="m-t-0">George Talamanov</h4>
-                            <p class="m-0"><i class="pe-7s-map-marker"></i>Saint Petersburg / Moscow</p>
-                        </div>
-                        <div class="card-content-summary">
-                            <p>Security Engineer </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
 
-            <div class="col-sm-12 col-md-8">
-                <div class="description-block">
+<head>
+    <title>Homework Page Profile</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style-profile.css') }}">
+</head>
+
+<body>
+    <main>
+        <div id="snippetContent">
+            <div class="container ">
+                <section class="col-md-12">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="review-block-title">Education</div>
-                            <div class="review-block-description">
-                                <p>Studied at MEPhI, now at ITMO. It is not so difficult to combine work,
-                                    university studies and studies paid for by work. But if there is a big load
-                                    on everything at once, I want to hang myself.</p>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-header-headshot"></div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-member">
+                                        <h4 class="m-t-0">George Talamanov</h4>
+                                        <p class="m-0"><i class="pe-7s-map-marker"></i>Saint Petersburg / Moscow</p>
+                                    </div>
+                                    <div class="card-content-summary">
+                                        <p>Security Engineer </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-8">
+                            <div class="description-block">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="review-block-title">Education</div>
+                                        <div class="review-block-description">
+                                            <p>Studied at MEPhI, now at ITMO. It is not so difficult to combine work,
+                                                university studies and studies paid for by work. But if there is a big load
+                                                on everything at once, I want to hang myself.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="review-block-title">Work</div>
+                                        <div class="review-block-description">
+                                            <p>Work in Positive Technologies as junior security expert.
+                                                Analize vulnerabilities for trending, write some SIEM rules
+                                                and scripts for working with knowledgebase.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="review-block-title">Nowdays</div>
+                                        <div class="review-block-description">
+                                            <p>Like this February because of the wedding and hate it because of
+                                                workload in education, work and Yandex Practicum at the same time.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="review-block-title">Work</div>
-                            <div class="review-block-description">
-                                <p>Work in Positive Technologies as junior security expert.
-                                    Analize vulnerabilities for trending, write some SIEM rules
-                                    and scripts for working with knowledgebase.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="review-block-title">Nowdays</div>
-                            <div class="review-block-description">
-                                <p>Like this February because of the wedding and hate it because of
-                                    workload in education, work and Yandex Practicum at the same time.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            </section>
+
         </div>
-</div>
-</section>
-{% endblock %}
+    </main>
+
+    {% include "includes/footer.html" %}
+
+</body>
+
+</html>
