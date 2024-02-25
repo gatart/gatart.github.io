@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DevSecOps Profile</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style-profile.css') }}">
+</head>
+
+<body>
+    {% include "includes/header.html" %}
+    <main>
+        <div id="snippetContent">
+            {% block content %}Контента пока нет :({% endblock %}
+        </div>
+        {% include "includes/footer.html" %}
+
+        </div>
+    </main>
+</body>
+
+</html>
